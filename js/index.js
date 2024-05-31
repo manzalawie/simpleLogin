@@ -83,6 +83,14 @@ function displayHome() {
   }
   username.textContent = "Welcome " + usersLogin.userName;
 }
+// return to home page if already login
+function displaylog() {
+  usersLogin = JSON.parse(localStorage.getItem("login"));
+
+  if (usersLogin !== null) {
+    window.location.href = "home.html";
+  }
+}
 // log out function
 function logout() {
   localStorage.removeItem("login");
