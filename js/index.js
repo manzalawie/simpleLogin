@@ -134,7 +134,7 @@ function signUp() {
     }
     users.push(newUser);
     localStorage.setItem("users", JSON.stringify(users));
-    // window.location.href = "index.html";
+    window.location.href = "index.html";
   }
   messageElement.textContent = cartona;
 }
